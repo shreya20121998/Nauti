@@ -1,0 +1,21 @@
+/* Enter your custom styles here */
+.sapTntToolHeader.sapMTB {
+    background-color: black !important;
+    border-radius: 0% !important;
+}
+
+.sapMLnk:not(.sapMLnkDsbl) {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left:10%
+}
+.sapMLnk:not(.sapMLnkDsbl):hover:not(:active):not(:focus) {
+    text-decoration: none;
+    text-shadow: none;
+    color: white;
+}
+#container-nauticalfe---View2--mainSplitter-content-1{
+    border: 2px solid grey;
+}
+
