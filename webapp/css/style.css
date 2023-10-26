@@ -1,4 +1,12 @@
 /* Enter your custom styles here */
+.layout{
+    margin-top: -7%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgb(221, 214, 214);
+    background-color: white;
+  
+}
 .sapTntToolHeader.sapMTB {
     background-color: black !important;
     border-radius: 0% !important;
@@ -16,6 +24,79 @@
     color: white;
 }
 #container-nauticalfe---View2--mainSplitter-content-1{
-    border: 2px solid grey;
+    border: 2px solid rgb(221, 214, 214);
+    height: 400px;
+    background-color: white;
+}
+#container-nauticalfe---View2--mainSplitter-content-2{
+    border: 2px solid rgb(221, 214, 214);
+    height: 400px;
+    background-color: white;
+}
+#container-nauticalfe---View2--mainSplitter-content-0{
+    border: 2px solid rgb(221, 214, 214);
+    height: 402px;
+    background-color: white;
+}
+.sapUiLoSplitterH.sapUiLoSplitter{
+    /* padding: 15px; */
+    margin: 10px;
+}
+#container-nauticalfe---View2--mainSplitter{
+    height: 400px;
 }
 
+/* .element.style {
+    width: 100%;
+    height: 430px;
+} */
+#_IDGenFlexBox1{
+    margin-left: 5px;
+}
+.sapMBtnInner.sapMBtnText{
+    color: rgb(207, 11, 11);
+    border: 1px solid rgb(207, 11, 11);
+    border-radius: 6px;
+    &:hover{
+        background-color: antiquewhite;
+        color: red;
+    }
+}
+.sapMBtnInner.sapMBtnText:hover{
+    color:red;
+}
+
+#container-nauticalfe---View2--_IDGenButton3-inner{
+    background-color: rgb(207, 11, 11);
+    color: white;
+}
+.sapUiSizeCompact .sapMCb {
+    margin-left: 10px;
+   
+}
+#__data13{
+    padding: 7px;
+}
+#__data15{
+    padding: 7px;
+}
+#__data16{
+    padding: 7px;
+}
+.sapUiSizeCompact .sapMBtnInner{
+    border: 1px solid red;
+   
+}
+.sapUiSizeCompact .sapMBtnIcon {
+    color: rgb(207, 11, 11);
+}
+/* .sapUiSizeCompact .sapMListTblCell.sapMListTblHeaderCell{
+    border: 1px solid rgb(239, 232, 232);
+} */
+.sapMListTblSelCol, .sapMListTblCell, .sapMListTblNavCol {
+    border: 1px solid rgb(239, 232, 232);
+}
+#container-nauticalfe---View2--logo2-icon-image{
+    height: 4rem;
+   
+}

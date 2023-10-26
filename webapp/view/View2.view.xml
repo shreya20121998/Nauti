@@ -1,7 +1,8 @@
 <mvc:View xmlns:tnt="sap.tnt" 
 xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
- controllerName="nauticalfe.controller.View2"
+ controllerName="nauticalfe.controller.View2" 
 	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+        <tnt:ToolHeader id="header2"><ImageContent id="logo2" src="../images/logo.jpg" ></ImageContent><Link id="link1" text="Create Voyage"></Link></tnt:ToolHeader>
     	<l:Splitter
 		id="mainSplitter"
         
@@ -18,15 +19,15 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
             <form:SimpleForm id="_IDGenSimpleForm1" title="Create Voyage">
             
                 <!-- Add your form elements here -->
-                <Label id="_IDGenLabel1" text="voyage Name"/>
+                <Label id="_IDGenLabel1" text="Voyage Name"/>
                 <Input id="_IDGenInput1" value=""/>
                 <Label id="_IDGenLabel2" text="Voyage Type"/>
                 <Input id="_IDGenInput2" value="" showValueHelp="true"/>
-                <Label id="_IDGenLabel3" text="bidding Type"/>
+                <Label id="_IDGenLabel3" text="Bidding Type"/>
                 <Input id="_IDGenInput3" value="" showValueHelp="true"/>
                 <Label id="_IDGenLabel4" text="Cargo Type"/>
                 <Input id="_IDGenInput4" value="" showValueHelp="true"/>
-                <Label id="_IDGenLabel5" text="currency"/>
+                <Label id="_IDGenLabel5" text="Currency"/>
                 <Input id="_IDGenInput5" value="" showValueHelp="true"/>
                 <!-- Add more form elements as needed -->
             </form:SimpleForm>
@@ -34,13 +35,93 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
 		<!-- </Button> -->
 		 <VBox id="_IDGenVBox2" class="vbox2">
 			<layoutData>
-				<l:SplitterLayoutData id="_IDGenSplitterLayoutData2" size="auto" resizable="false" />
+				<l:SplitterLayoutData id="_IDGenSplitterLayoutData2" size="700px" resizable="false" />
 			</layoutData>
 		</VBox>
 		 <VBox id="_IDGenVBox3">
 			<layoutData>
-				<l:SplitterLayoutData id="_IDGenSplitterLayoutData3" size="30%" minSize="200px" resizable="false" />
+				<l:SplitterLayoutData id="_IDGenSplitterLayoutData3" size="30%" minSize="150px" resizable="false" />
 			</layoutData>
 		</VBox>
 	</l:Splitter>
+
+    <HBox id="_IDGenHBox1" class="layout">
+       <FlexBox id="_IDGenFlexBox1" >
+        <CheckBox id="_IDGenCheckBox1" text="Suez" />
+        <CheckBox id="_IDGenCheckBox2" text="Panama" />
+        <CheckBox id="_IDGenCheckBox3" text="Keil" />
+        </FlexBox>
+       
+        <FlexBox id="_IDGenFlexBox2">
+            <Label id="_IDGenLabel6" text="Speed" />
+            <Input id="_IDGenInput6"  />
+            <Label id="_IDGenLabel8" text="NM/HRS" />
+        </FlexBox>
+        <FlexBox id="_IDGenFlexBox4" >
+        <Label id="_IDGenLabel7" text="Total Days" />
+        <Input id="_IDGenInput7"  />
+        </FlexBox>
+        <FlexBox id="_IDGenFlexBox3" >
+        <Button id="_IDGenButton1" text="Create Voyage" />
+        <Button id="_IDGenButton2" text="Freight Simulator" />
+        <Button id="_IDGenButton3" text="Calculate" />
+        <Button id="_IDGenButton4"  icon="sap-icon://refresh" />
+        </FlexBox>
+       
+       
+      </HBox>
+        <Table id="table"  growing="true" growingThreshold="10" class="color">
+          <columns>
+           <Column id="heading1" >
+             <Text id="text1" text="Port Name"/>
+           </Column>
+           <Column id="heading2" >
+             <Text id="text2" text="Distance(NM)"/>
+           </Column>
+           <Column id="heading3" >
+             <Text id="text3" text="Weather%"/>
+           </Column>
+           <Column id="heading4" >
+             <Text id="text4" text="Cargo Size"/>
+           </Column>
+           <Column id="heading5" >
+             <Text id="text5" text="Unit"/>
+           </Column>
+           <Column id="heading6" >
+             <Text id="text6" text="Speed(NM/Hr)"/>
+           </Column>
+           <Column id="heading7" >
+             <Text id="text7" text="Sea Days"/>
+           </Column>
+           <Column id="heading8" >
+             <Text id="text8" text="Port Days"/>
+           </Column>
+           <Column id="heading9" >
+             <Text id="text9" text="Arrival Date"/>
+           </Column>
+           <Column id="heading10" >
+             <Text id="text10" text="Arrival Time"/>
+           </Column>
+          </columns>
+ 
+          <items>
+           <ColumnListItem id="coloumnlist">
+             <cells>
+              <Text id="field1" text ="Mumbai"/>
+              <Text id="field2" text ="1625.00"/>
+              <Text id="field3" text ="2%"/>
+              <Text id="field4" text ="0.000"/>
+              <Text id="field5" text ="10"/>
+               <Text id="field6" text ="250nml"/>
+              <Text id="field7" text ="4"/>
+              <Text id="field8" text ="4"/>
+              <Text id="field9" text ="26-10-2023"/>
+              <Text id="field10" text ="16:38"/>
+             
+             
+             
+             </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
 </mvc:View>
