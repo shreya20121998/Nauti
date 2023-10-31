@@ -4,8 +4,7 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
 	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
         <tnt:ToolHeader id="header2"><ImageContent id="logo2" src="../images/logo.jpg" ></ImageContent><Link id="link1" text="Create Voyage"></Link></tnt:ToolHeader>
     	<l:Splitter
-		id="mainSplitter"
-        
+		id="mainSplitter"        
 		height="500px"
 		width="100%">
         
@@ -17,16 +16,15 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
             </layoutData>
             <!-- Add a Form inside _IDGenSplitterLayoutData1 -->
             <form:SimpleForm id="_IDGenSimpleForm1" title="Create Voyage">
-            
                 <!-- Add your form elements here -->
                 <Label id="_IDGenLabel1" text="Voyage Name"/>
                 <Input id="_IDGenInput1" value=""/>
                 <Label id="_IDGenLabel2" text="Voyage Type"/>
-                <Input id="_IDGenInput2" value="" showValueHelp="true"/>
+                  <Input id="_IDGenInput2" value="" showValueHelp="true" valueHelpRequest="showValueHelpDialog1" />           
                 <Label id="_IDGenLabel3" text="Bidding Type"/>
-                <Input id="_IDGenInput3" value="" showValueHelp="true"/>
+                <Input id="_IDGenInput3" value="" showValueHelp="true" valueHelpRequest=".showValueHelpDialog2"/>
                 <Label id="_IDGenLabel4" text="Cargo Type"/>
-                <Input id="_IDGenInput4" value="" showValueHelp="true"/>
+                <Input id="_IDGenInput4" value="" showValueHelp="true" valueHelpRequest=".showValueHelpDialog3"/>
                 <Label id="_IDGenLabel5" text="Currency"/>
                 <Input id="_IDGenInput5" value="" showValueHelp="true"/>
                 <!-- Add more form elements as needed -->
@@ -52,24 +50,23 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
         <CheckBox id="_IDGenCheckBox3" text="Keil" />
         </FlexBox>
        
-        <FlexBox id="_IDGenFlexBox2">
-            <Label id="_IDGenLabel6" text="Speed" />
+        <FlexBox id="_IDGenFlexBox2" >
+            <Label id="_IDGenLabel6" text="Speed" class="speedmeasuretxt" />
             <Input id="_IDGenInput6"  />
-            <Label id="_IDGenLabel8" text="NM/HRS" />
+            <Label id="_IDGenLabel8" text="NM/HRS" class="speedmeasuretxt" />
+            <Label id="_IDGenLabel7" text="Total Days" class="speedmeasuretxt" />
+            <Input id="_IDGenInput7"  />
         </FlexBox>
-        <FlexBox id="_IDGenFlexBox4" >
-        <Label id="_IDGenLabel7" text="Total Days" />
-        <Input id="_IDGenInput7"  />
+
+        <FlexBox id="_IDGenFlexBox3">
+          <Button id="_IDGenButton1" text="Create Voyage" press="onCreateVoyage" />
+          <Button id="_IDGenButton2" text="Freight Simulator" />
+          <Button id="_IDGenButton3" class="flexbtn" text="Calculate" />
+          <Button id="_IDGenButton4" icon="sap-icon://refresh" />
         </FlexBox>
-        <FlexBox id="_IDGenFlexBox3" >
-        <Button id="_IDGenButton1" text="Create Voyage" />
-        <Button id="_IDGenButton2" text="Freight Simulator" />
-        <Button id="_IDGenButton3" text="Calculate" />
-        <Button id="_IDGenButton4"  icon="sap-icon://refresh" />
-        </FlexBox>
-       
-       
-      </HBox>
+    </HBox>
+
+
         <Table id="table"  growing="true" growingThreshold="10" class="color">
           <columns>
            <Column id="heading1" >
@@ -107,20 +104,32 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
           <items>
            <ColumnListItem id="coloumnlist">
              <cells>
-              <Text id="field1" text ="Mumbai"/>
-              <Text id="field2" text ="1625.00"/>
-              <Text id="field3" text ="2%"/>
-              <Text id="field4" text ="0.000"/>
-              <Text id="field5" text ="10"/>
-               <Text id="field6" text ="250nml"/>
-              <Text id="field7" text ="4"/>
-              <Text id="field8" text ="4"/>
-              <Text id="field9" text ="26-10-2023"/>
-              <Text id="field10" text ="16:38"/>
-             
-             
-             
+              <Input id="field1" value ="Mumbai"/>
+              <Input id="field2" value ="1625.00"/>
+              <Input id="field3" value ="2%"/>
+              <Input id="field4" value ="0.000"/>
+              <Input id="field5" value ="10"/>
+              <Input id="field6" value ="250nml"/>
+              <Input id="field7" value ="4"/>
+              <Input id="field8" value ="4"/>
+              <Input id="field9" value ="26-10-2023"/>
+              <Input id="field10" value ="16:38"/>
              </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="_IDGenColumnListItem1">
+           <cells>
+              <Input id="field11" value ="Delhi"/>
+              <Input id="field12" value ="1625.00"/>
+              <Input id="field13" value ="2%"/>
+              <Input id="field14" value ="0.000"/>
+              <Input id="field15" value ="10"/>
+              <Input id="field16" value ="250nml"/>
+              <Input id="field17" value ="4"/>
+              <Input id="field18" value ="4"/>
+              <Input id="field19" value ="26-10-2023"/>
+              <Input id="field20" value ="16:38"/>
+            </cells>
            </ColumnListItem>
           </items>
         </Table>

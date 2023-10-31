@@ -1,0 +1,151 @@
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+controllerName="nauticalfe.controller.View3"
+xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+<tnt:ToolHeader id="header1"><Link id="link1" text="Create Voyage"></Link></tnt:ToolHeader>
+<tnt:ToolHeader id="header2"><Text id="link2" text="Freight Simulator"></Text></tnt:ToolHeader>
+<tnt:ToolHeader id="header3" class="freightmainheader"><Text id="link3" text="Freight(Per TON)" class="freighttxt "></Text></tnt:ToolHeader>
+    <tnt:ToolHeader id="header4" class="freightsubheader">
+
+        <HBox id="horizontalbox1">
+            <FlexBox id="freightbox1" class="subHeaderFlexItem">
+                <Label id="freightlable1" text="Proposed Freight Cost" class="freighttxt" />
+                <Input id="freightinput1"  />
+                <Label id="freightlable2" text="Total Cost" class="freighttxt" />
+                <Input id="freightinput2"  />
+            </FlexBox>
+        </HBox>
+
+    </tnt:ToolHeader>
+
+<Table id="freightTable" class="ftable">
+          <columns>
+           <Column id="fcolum1" >
+             <Text id="ftext1" text="Port Name"/>
+           </Column>
+           <Column id="fcolum2" >
+             <Text id="ftext2" text="Distance(NM)"/>
+           </Column>
+           <Column id="fcolum3" >
+             <Text id="ftext4" text="Cargo Size"/>
+           </Column>
+           <Column id="fcolum4" >
+             <Text id="ftext5" text="Freight Cost"/>
+           </Column>
+           <Column id="fcolum5" >
+             <Text id="ftext6" text="Other Cost"/>
+           </Column>
+           <Column id="fcolum6" >
+             <Text id="ftext7" text="Total Projected Cost per Port"/>
+           </Column>
+          </columns>
+ 
+          <items>
+           <ColumnListItem id="freightcolumnlist1">
+             <cells>
+              <Text id="freighttxt1"  text ="Mumbai"/>
+              <Text id="freighttxt2"  text ="1625.00"/>
+              <Text id="freighttxt3"  text ="0.000"/>
+              <Text id="freighttxt4"  text ="0.000"/>
+              <Text id="freighttxt5"  text ="10"/>
+              <Text id="freighttxt6" text =""/>
+             </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="freightcolumnlist2">
+            <cells>
+                <Text id="freighttxt7"  text ="Mumbai"/>
+                <Text id="freighttxt8"  text ="1625.00"/>
+                <Text id="freighttxt9"  text ="0.000"/>
+                <Text id="freighttxt10"  text ="0.000"/>
+                <Text id="freighttxt11"  text ="10"/>
+                <Text id="freighttxt12"  text =""/>
+            </cells>
+           </ColumnListItem>
+            <ColumnListItem id="freightcolumnlist3">
+            <cells>
+                <Text id="freighttxt13"  text =""/>
+                <Text id="freighttxt14"  text =""/>
+                <Text id="freighttxt15"  text =""/>
+                <Text id="freighttxt16"  text =""/>
+                <Text id="freighttxt17"  text =""/>
+                <Text id="freighttxt18"  text =""/>
+            </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+<tnt:ToolHeader id="header5" class="freightmainheader"><Text id="link4" text="Freight(Lumpsum)" class="freighttxt"></Text></tnt:ToolHeader>
+    <tnt:ToolHeader id="header6" class="freightsubheader">
+
+        <HBox id="horizontalbox2" >
+            <FlexBox id="freightbox2" class="subHeaderFlexItem">
+            <Label id="freightlabel3" text="Proposed Freight Cost" class="freighttxt" />
+            <Input id="freightinput3"  />
+            <Label id="freightformbox2" text="Total Cost" class="freighttxt" />
+            <Input id="freightlabe4"  />
+            </FlexBox>
+        </HBox>
+
+    </tnt:ToolHeader>
+
+<Table id="freightTable2" class="ftable">
+          <columns>
+           <Column id="fcolum12" >
+             <Text id="ftext11" text="Port Name"/>
+           </Column>
+           <Column id="fcolum13" >
+             <Text id="ftext12" text="Distance(NM)"/>
+           </Column>
+           <Column id="fcolum14" >
+             <Text id="ftext13" text="Cargo Size"/>
+           </Column>
+           <Column id="fcolum15" >
+             <Text id="ftext14" text="Freight Cost"/>
+           </Column>
+           <Column id="fcolum16" >
+             <Text id="ftext15" text="Other Cost"/>
+           </Column>
+           <Column id="fcolum17" >
+             <Text id="ftext16" text="Total Projected Cost per Port"/>
+           </Column>
+          </columns>
+ 
+          <items>
+           <ColumnListItem id="freightcolumnlist4">
+             <cells>
+              <Text id="freighttxt19"  text ="Mumbai"/>
+              <Text id="freighttxt20"  text ="1625.00"/>
+              <Text id="freighttxt21"  text ="0.000"/>
+              <Text id="freighttxt22"  text ="0.000"/>
+              <Text id="freighttxt23"  text ="10"/>
+              <Text id="freighttxt24" text =""/>
+             </cells>
+             
+           </ColumnListItem>
+           <ColumnListItem id="freightcolumnlist5">
+            <cells>
+                <Text id="freighttxt25"  text ="Mumbai"/>
+                <Text id="freighttxt26"  text ="1625.00"/>
+                <Text id="freighttxt27"  text ="0.000"/>
+                <Text id="freighttxt28"  text ="0.000"/>
+                <Text id="freighttxt29"  text ="10"/>
+                <Text id="freighttxt30"  text =""/>
+            </cells>
+           </ColumnListItem>
+            <ColumnListItem id="freightcolumnlist6">
+            <cells>
+                <Text id="freighttxt31"  text =""/>
+                <Text id="freighttxt32"  text =""/>
+                <Text id="freighttxt33"  text =""/>
+                <Text id="freighttxt34"  text =""/>
+                <Text id="freighttxt35"  text =""/>
+                <Text id="freighttxt36"  text =""/>
+            </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+
+    
+
+</mvc:View>

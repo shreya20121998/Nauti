@@ -5,7 +5,7 @@
     justify-content: space-between;
     border: 1px solid rgb(221, 214, 214);
     background-color: white;
-  
+    margin-left: 10px;
 }
 .sapTntToolHeader.sapMTB {
     background-color: black !important;
@@ -62,19 +62,20 @@
         color: red;
     }
 }
-.sapMBtnInner.sapMBtnText:hover{
+/* .sapMBtnInner.sapMBtnText:hover{
     color:red;
-}
+} */
 
 #container-nauticalfe---View2--_IDGenButton3-inner{
     background-color: rgb(207, 11, 11);
     color: white;
 }
+
 .sapUiSizeCompact .sapMCb {
     margin-left: 10px;
    
 }
-#__data13{
+/* #__data13{
     padding: 7px;
 }
 #__data15{
@@ -82,10 +83,12 @@
 }
 #__data16{
     padding: 7px;
+} */
+.speedmeasuretxt{
+    padding: 7px !important;
 }
 .sapUiSizeCompact .sapMBtnInner{
     border: 1px solid red;
-   
 }
 .sapUiSizeCompact .sapMBtnIcon {
     color: rgb(207, 11, 11);
@@ -98,5 +101,54 @@
 }
 #container-nauticalfe---View2--logo2-icon-image{
     height: 4rem;
-   
+}
+.flexbtn{
+    margin-right: 10px;
+    border-radius: 2px;
+}
+.sapMListTbl {
+    margin-left: 10px;
+    /* margin-right: 10px; */
+}
+
+
+#container-nauticalfe---View3--header2{
+    background-color: white !important;
+}
+#container-nauticalfe---View3--link2{
+    color: black;
+    margin-left: 45%;
+}
+#container-nauticalfe---View3--header3{
+    background-color: rgb(18, 116, 116) !important;
+    height: 45px;
+}
+
+#container-nauticalfe---View3--header4{
+    background-color: rgb(41, 178, 178) !important;
+    margin: 10px 20px 0px 20px;
+    height: 40px;
+}
+
+.sapMFlexItem{
+    margin-left: 10px;
+}
+/* .subHeaderFlexItem{
+    margin-left: 10px !important;
+} */
+.ftable{
+    padding-left: 0.6%;
+    padding-right: 2.1%
+}
+.freighttxt{
+    color:white !important;
+}
+#container-nauticalfe---View3--header5{
+    background-color: rgb(18, 116, 116) !important;
+    height: 45px;
+}
+#container-nauticalfe---View3--header6{
+    background-color: rgb(41, 178, 178) !important;
+    margin: 10px 20px 0px 20px;
+    height: 40px;
 }
