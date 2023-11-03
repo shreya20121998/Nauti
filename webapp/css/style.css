@@ -152,3 +152,47 @@
     margin: 10px 20px 0px 20px;
     height: 40px;
 }
+.input#container-nauticalfe---View2--productInput-inner {
+    width: fit-content;
+}
+/*Bidding Controller*/
+#container-nauticalfe---BiddingController--biddingContHeaderId2{
+    background-color: white !important;
+    border-bottom: 1px solid rgb(211, 211, 211);
+}
+#container-nauticalfe---BiddingController--biddingContHeaderText2{
+    color: black;
+    margin-left: 40%;
+}
+.biddingTileFlex{
+    justify-content: space-around;
+    justify-content: space-between;
+    justify-content: center;
+}
+/* .biddingPage{
+    padding: 20px
+} */
+/* .biddingTable{
+    margin: 10px;
+    border: none !important;
+} */
+
+.sapMListTblSelCol, .sapMListTblCell, .sapMListTblNavCol {
+    border: none;
+}
+.ongoingPanelPanel{
+    background-color: white;
+    padding: 50px;
+    border: 1px solid rgb(222, 216, 216) !important;
+    border-radius: 0;
+    margin: 1%;
+    margin-right: 5%;
+
+}
+#container-nauticalfe---BiddingController--Panel1-header{
+    border-bottom: none;
+}
+.sapMColumnHeader {
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(195, 189, 189) ;
+}

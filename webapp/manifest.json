@@ -57,6 +57,10 @@
         "settings": {
           "bundleName": "nauticalfe.i18n.i18n"
         }
+      },
+      "biddata": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/Bid.json"
       }
     },
     "resources": {
@@ -97,6 +101,20 @@
           "target": [
             "TargetView3"
           ]
+        },
+        {
+          "name": "RouteBidCont",
+          "pattern": "biddingController",
+          "target": [
+            "TargetBidCont"
+          ]
+        },
+        {
+          "name": "RouteBidObj",
+          "pattern": "biddingControllerobjectpage/{bidObjPath}",
+          "target": [
+            "TargetBidObj"
+          ]
         }
       ],
       "targets": {
@@ -120,6 +138,20 @@
           "clearControlAggregation": false,
           "viewId": "View3",
           "viewName": "View3"
+        },
+        "TargetBidCont": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BidCont",
+          "viewName": "BidCont"
+        },
+        "TargetBidObj": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "BidObj",
+          "viewName": "BidObj"
         }
       }
     },

@@ -13,8 +13,13 @@ sap.ui.define([
             },
             
             onPress: function() {
+                console.log("click");
                 const oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("RouteView2");
+            },
+            onPress2: function() {
+                const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("RouteBidCont");
             }
         });
     });

@@ -30,9 +30,9 @@ sap.ui.define([
                 const oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("RouteView3");
             },
-            // populateInputField: function (inputField, selectedValue) {
-            //     inputField.setValue(selectedValue);
-            // },
+            populateInputField: function (inputField, selectedValue) {
+                inputField.setValue(selectedValue);
+            },
             showValueHelpDialog1: function () {
                 // Create a dialog
                 var oDialog = new sap.m.Dialog({
@@ -87,6 +87,29 @@ sap.ui.define([
             },
             populateInputField: function (inputField, selectedValue) {
                 inputField.setValue(selectedValue);
+            },
+
+            handleTableSelectDialogPress: function (oEvent) {
+
+                console.log("Dialog Box Clicked");
+                var oButton = oEvent.getSource(),
+                    oView = this.getView();
+                
+                if (!this._pDialog) {
+                    this._pDialog = Fragment.load({
+                        id: oView.getId(),
+                        name: "nauticalfe.controller.View2",
+                        controller: this
+                    }).then(function(oDialog){
+                        oView.addDependent(oDialog);
+                        return oDialog;
+                    });
+                }
+    
+                this._pDialog.then(function(oDialog){
+                    this._configDialog(oButton, oDialog);
+                    oDialog.open();
+                }.bind(this));
             },
             
                 

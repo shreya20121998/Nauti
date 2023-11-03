@@ -1,0 +1,8 @@
+<mvc:View xmlns:tnt="sap.tnt" 
+xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+ controllerName="nauticalfe.controller.BidObj" 
+	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    
+    <ObjectHeader title="{biddata>ProductName}"></ObjectHeader>
+
+ </mvc:View>
