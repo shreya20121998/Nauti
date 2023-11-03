@@ -11,25 +11,25 @@ xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     vertical="true"
     focusable="true">
     <FlexBox id="biddingTileFlexId" class="biddingTileFlex">
-        <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Open" subheader="Bids" press="press">
+        <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Open" subheader="Bids" press="onTilePress">
             <TileContent id="openTile">
                 <NumericContent id="openTileNumericId" value="0" icon="sap-icon://open-folder" withMargin="false" />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="closedTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Closed" subheader="Bids" press="press">
+        <GenericTile id="closedTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Closed" subheader="Bids" press="onTilePress">
             <TileContent id="closedTile">
                 <NumericContent id="closedTileNumericId" value="4" icon="sap-icon://folder-full" withMargin="false" />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Ongoing" subheader="Bids" press="press">
+        <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Ongoing" subheader="Bids" press="onTilePress">
             <TileContent id="ongoingTile">
                 <NumericContent id="ongoingTileNumericId"  value="2" icon="sap-icon://away" withMargin="false" />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="AllTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="All" subheader="Bids" press="press">
+        <GenericTile id="AllTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="All" subheader="Bids" press="onTilePress">
             <TileContent id="AllTile">
                 <NumericContent id="AllTileNumericId" value="18" icon="sap-icon://browse-folder" withMargin="false" />
             </TileContent>
@@ -63,178 +63,16 @@ xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
           <items>
            <ColumnListItem id="biddingcolumnlist1" type="Navigation" press="onPressBidTableData">
              <cells>
-              <Text id="biddingtxt1"  text ="{biddata>ProductName}"/>
-              <Text id="biddingtxt2"  text ="{biddata>Quantity}"/>
-              <Text id="biddingtxt3"  text ="{biddata>ExtendedPrice}"/>
-              <Text id="biddingtxt4"  text ="{biddata>ShipperName}"/>
-              <Text id="biddingtxt5"  text ="{biddata>ShippedDate}"/>
+              <Text id="biddingtxt1"  text ="{biddata>Chartering Req. No.}"/>
+              <Text id="biddingtxt2"  text ="{biddata>Bid Start Date}"/>
+              <Text id="biddingtxt3"  text ="{biddata>Bid Start Time}"/>
+              <Text id="biddingtxt4"  text ="{biddata>Bid End Date}"/>
+              <Text id="biddingtxt5"  text ="{biddata>Bid End Time}"/>
               <Text id="biddingtxt6" text ="{biddata>Status}"/>
              </cells>
-             
            </ColumnListItem>
-           <!-- <ColumnListItem id="biddingcolumnlist2">
-            <cells>
-                <Text id="biddingtxt7"  text ="4000000049"/>
-                <Text id="biddingtxt8"  text ="2023-11-01"/>
-                <Text id="biddingtxt9"  text ="15:06:45"/>
-                <Text id="biddingtxt10"  text ="2023-11-01"/>
-                <Text id="biddingtxt11"  text ="15:20:51"/>
-                <Text id="biddingtxt12"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-          <ColumnListItem id="biddingcolumnlist3">
-            <cells>
-                <Text id="biddingtxt13"  text ="4000000049"/>
-                <Text id="biddingtxt14"  text ="2023-11-01"/>
-                <Text id="biddingtxt15"  text ="15:06:45"/>
-                <Text id="biddingtxt16"  text ="2023-11-01"/>
-                <Text id="biddingtxt17"  text ="15:20:51"/>
-                <Text id="biddingtxt18"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-           <ColumnListItem id="biddingcolumnlist4">
-            <cells>
-                <Text id="biddingtxt19"  text ="4000000049"/>
-                <Text id="biddingtxt20"  text ="2023-11-01"/>
-                <Text id="biddingtxt21"  text ="15:06:45"/>
-                <Text id="biddingtxt22"  text ="2023-11-01"/>
-                <Text id="biddingtxt23"  text ="15:20:51"/>
-                <Text id="biddingtxt24"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-           <ColumnListItem id="biddingcolumnlist5">
-            <cells>
-                <Text id="biddingtxt25"  text ="4000000049"/>
-                <Text id="biddingtxt26"  text ="2023-11-01"/>
-                <Text id="biddingtxt27"  text ="15:06:45"/>
-                <Text id="biddingtxt28"  text ="2023-11-01"/>
-                <Text id="biddingtxt29"  text ="15:20:51"/>
-                <Text id="biddingtxt30"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-           <ColumnListItem id="biddingcolumnlist6">
-            <cells>
-                <Text id="biddingtxt31"  text ="4000000049"/>
-                <Text id="biddingtxt32"  text ="2023-11-01"/>
-                <Text id="biddingtxt33"  text ="15:06:45"/>
-                <Text id="biddingtxt34"  text ="2023-11-01"/>
-                <Text id="biddingtxt35"  text ="15:20:51"/>
-                <Text id="biddingtxt36"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-           <ColumnListItem id="biddingcolumnlist7">
-            <cells>
-                <Text id="biddingtxt37"  text ="4000000049"/>
-                <Text id="biddingtxt38"  text ="2023-11-01"/>
-                <Text id="biddingtxt39"  text ="15:06:45"/>
-                <Text id="biddingtxt40"  text ="2023-11-01"/>
-                <Text id="biddingtxt41"  text ="15:20:51"/>
-                <Text id="biddingtxt42"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-            <ColumnListItem id="biddingcolumnlist8">
-            <cells>
-                <Text id="biddingtxt43"  text ="4000000049"/>
-                <Text id="biddingtxt44"  text ="2023-11-01"/>
-                <Text id="biddingtxt45"  text ="15:06:45"/>
-                <Text id="biddingtxt46"  text ="2023-11-01"/>
-                <Text id="biddingtxt47"  text ="15:20:51"/>
-                <Text id="biddingtxt48"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-            <ColumnListItem id="biddingcolumnlist9">
-            <cells>
-                <Text id="biddingtxt49"  text ="4000000049"/>
-                <Text id="biddingtxt50"  text ="2023-11-01"/>
-                <Text id="biddingtxt51"  text ="15:06:45"/>
-                <Text id="biddingtxt52"  text ="2023-11-01"/>
-                <Text id="biddingtxt53"  text ="15:20:51"/>
-                <Text id="biddingtxt54"  text ="closed"/>
-            </cells>
-           </ColumnListItem>
-            <ColumnListItem id="biddingcolumnlist10">
-            <cells>
-                <Text id="biddingtxt55"  text ="4000000049"/>
-                <Text id="biddingtxt56"  text ="2023-11-01"/>
-                <Text id="biddingtxt57"  text ="15:06:45"/>
-                <Text id="biddingtxt58"  text ="2023-11-01"/>
-                <Text id="biddingtxt59"  text ="15:20:51"/>
-                <Text id="biddingtxt60"  text ="closed"/>
-            </cells>
-           </ColumnListItem> -->
           </items>
         </Table>
   </Panel>
-
-
-
-
-
-
-
-
-    <!-- <VBox id="biddingPageId" class="biddingPage" >
-
-      <Table id="biddingTableId" class="biddingTable">
-
-          <columns>
-           <Column id="bcolum1" >
-             <Text id="btext1" text="Chartering Req. No."/>
-           </Column>
-           <Column id="bcolum2" >
-             <Text id="btext2" text="Bid Start Date"/>
-           </Column>
-           <Column id="bcolum3" >
-             <Text id="btext4" text="Bid Start Time"/>
-           </Column>
-           <Column id="bcolum4" >
-             <Text id="btext5" text="Bid End Date"/>
-           </Column>
-           <Column id="bcolum5" >
-             <Text id="btext6" text="Bid End Time"/>
-           </Column>
-           <Column id="bcolum6" >
-             <Text id="btext7" text="Status"/>
-           </Column>
-          </columns>
- 
-          <items>
-           <ColumnListItem id="biddingcolumnlist1">
-             <cells>
-              <Text id="biddingtxt1"  text ="4000000048"/>
-              <Text id="biddingtxt2"  text ="2023-11-01"/>
-              <Text id="biddingtxt3"  text ="15:06:45"/>
-              <Text id="biddingtxt4"  text ="2023-11-01"/>
-              <Text id="biddingtxt5"  text ="15:20:51"/>
-              <Text id="biddingtxt6" text =""/>
-             </cells>
-             
-           </ColumnListItem>
-           <ColumnListItem id="biddingcolumnlist2">
-            <cells>
-                <Text id="biddingtxt7"  text ="4000000049"/>
-                <Text id="biddingtxt8"  text ="2023-11-01"/>
-                <Text id="biddingtxt9"  text ="15:06:45"/>
-                <Text id="biddingtxt10"  text ="2023-11-01"/>
-                <Text id="biddingtxt11"  text ="15:20:51"/>
-                <Text id="biddingtxt12"  text =""/>
-            </cells>
-           </ColumnListItem>
-            <ColumnListItem id="biddingcolumnlist3">
-            <cells>
-                <Text id="biddingtxt13"  text =""/>
-                <Text id="biddingtxt14"  text =""/>
-                <Text id="biddingtxt15"  text =""/>
-                <Text id="biddingtxt16"  text =""/>
-                <Text id="biddingtxt17"  text =""/>
-                <Text id="biddingtxt18"  text =""/>
-            </cells>
-           </ColumnListItem>
-          </items>
-        </Table>
-
-    </VBox> -->
-  
-
 </ScrollContainer>
 </mvc:View>

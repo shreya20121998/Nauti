@@ -1,4 +1,5 @@
 /* Enter your custom styles here */
+
 .layout{
     margin-top: -7%;
     display: flex;
@@ -156,18 +157,22 @@
     width: fit-content;
 }
 /*Bidding Controller*/
-#container-nauticalfe---BiddingController--biddingContHeaderId2{
+#container-nauticalfe---BidCont--biddingContHeaderId2{
     background-color: white !important;
     border-bottom: 1px solid rgb(211, 211, 211);
 }
-#container-nauticalfe---BiddingController--biddingContHeaderText2{
+#container-nauticalfe---BidCont--biddingContHeaderText2{
     color: black;
     margin-left: 40%;
 }
+
 .biddingTileFlex{
     justify-content: space-around;
     justify-content: space-between;
     justify-content: center;
+}
+.tileBox{
+    border-radius: 0%;
 }
 /* .biddingPage{
     padding: 20px
@@ -189,10 +194,29 @@
     margin-right: 5%;
 
 }
-#container-nauticalfe---BiddingController--Panel1-header{
+#container-nauticalfe---BidCont--Panel1-header{
     border-bottom: none;
 }
 .sapMColumnHeader {
     background-color: rgb(240, 235, 235);
     border-top: 1px solid rgb(195, 189, 189) ;
+}
+#container-nauticalfe---BidCont--biddingTableId-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(195, 189, 189) ;
+}
+#container-nauticalfe---BidCont--openTileNumericId-value-inner{
+    font-weight:bold;
+    color: rgb(227, 119, 30);
+}
+#container-nauticalfe---BidCont--ongoingTileNumericId-value-inner{
+    font-weight:bold;
+    color: rgb(227, 119, 30);
+}
+#container-nauticalfe---BidCont--closedTileNumericId-value-inner{
+    font-weight:bold;
+    color: rgb(44, 150, 28);
+}
+#container-nauticalfe---BidCont--AllTileNumericId-value-inner{
+    font-weight:bold;
 }
