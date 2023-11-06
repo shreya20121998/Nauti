@@ -11,11 +11,6 @@ sap.ui.define([
             onInit: function () {
 
             },
-           
-            // onPressBiddingTableCelss: function() {
-            //     const oRouter = this.getOwnerComponent().getRouter();
-            //     oRouter.navTo("RouteBiddingControllerObjectPage");
-            // }
             onPressBidTableData(oEvent) {
                 const oItem = oEvent.getSource();
                 const oRouter = this.getOwnerComponent().getRouter();

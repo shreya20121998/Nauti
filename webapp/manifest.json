@@ -61,6 +61,10 @@
       "biddata": {
         "type": "sap.ui.model.json.JSONModel",
         "uri": "model/Bid.json"
+      },
+      "fdata": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/Freight.json"
       }
     },
     "resources": {

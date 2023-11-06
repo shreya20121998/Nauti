@@ -220,3 +220,68 @@
 #container-nauticalfe---BidCont--AllTileNumericId-value-inner{
     font-weight:bold;
 }
+/* BiddingObjectPage */
+#container-nauticalfe---BidObj--bidObjContHeaderId2{
+    Background-color: White !important;
+}
+#container-nauticalfe---BidObj--bidObjContHeaderText2{
+    margin-left: 40% !important;
+    font-weight: bold !important;
+}
+.BPanel1{
+    width: 30rem !important;
+    border-radius: 0%;
+}
+.botxt1{
+    display: block !important;
+    font-size: 22px;
+    margin-top: 3%;
+}
+.botxt2{
+    margin-top: 10%;
+}
+.botxt3{
+    margin-top: 3%;
+    display: block;
+}
+#container-nauticalfe---BidObj--bPanel1-content{
+    padding: 3rem
+}
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.vendorList{
+    text-align: center !important;
+    border: 1px solid rgb(178, 171, 171) !important;
+}
+.BPanel2{
+    padding: 3rem 0.5rem;
+    width: "40%" !important;
+    
+}
+.vlabel{
+    font-size: 18px;
+}
+.vlabelData{
+    display: block;
+    padding: 15px;
+    
+}
+.vendorListHeading{
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+#__button0-inner{
+    background-color: rgba(234, 20, 20, 0.934);
+    color: white;
+    border-radius: 3% !important;
+}
+.vTHeading{
+    font-size: 20px;
+}
+.cql1{
+    padding-top:8px;
+}

@@ -36,11 +36,11 @@ xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
         </GenericTile>
     </FlexBox>
 
-  <Panel id="Panel1" class="ongoingPanelPanel" headerText="Ongoing Bids">
-    <Table id="biddingTableId" class="biddingTable" items="{biddata>/BiddingData}">
+  <Panel id="Panel1" class="ongoingPanelPanel" width="auto" headerText="Ongoing Bids">
+    <Table id="biddingTableId" class="biddingTable sapUiResponsiveMargin" width="auto" items="{biddata>/BiddingData}">
 
           <columns>
-           <Column id="bcolum1" >
+           <Column id="bcolum1">
              <Text id="btext1" text="Chartering Req. No."/>
            </Column>
            <Column id="bcolum2" >

@@ -3,6 +3,78 @@ xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
  controllerName="nauticalfe.controller.BidObj" 
 	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     
-    <ObjectHeader title="{biddata>Chartering Req. No.}"></ObjectHeader>
+    <!-- <ObjectHeader title="{biddata>Chartering Req. No.}"></ObjectHeader> -->
+<tnt:ToolHeader id="bidObjContHeaderId" class="bidObjContHeader"><Link id="biddingContHeaderText" text="Bidding Controller Portal"></Link></tnt:ToolHeader>
+<tnt:ToolHeader id="bidObjContHeaderId2" class="bidObjContHeader2"><Text id="bidObjContHeaderText2" text="Bidding Controller Portal"></Text></tnt:ToolHeader>
+
+    <VBox id="vPanel1" class="vPanel">
+        <Panel id="bPanel1" class="BPanel1 sapUiResponsiveMargin">
+            <Label id="LTxt1" text="Bid Information for Charter Req. "></Label>
+            <Text id="boTxt1" class="botxt1" text="{biddata>Chartering Req. No.}"/>
+            <Text id="boTxt2" class="botxt2" text="Bid From: {biddata>Bid Start Date} {biddata>Bid Start Time}"/>
+            <Text id="boTxt3" class="botxt3" text="Bid To: {biddata>Bid End Date} {biddata>Bid End Time}"/>
+        </Panel>
+
+        <Panel id="bPanel2" class="BPanel2" >
+            <Text id="LTxt2" class="vlabel" text="Leading Commercial Rank: {biddata>Commercial Score} "></Text>
+            <Text id="LTxt3" class="vlabelData" text="Quote: {biddata>Current Bid}"></Text>
+            <Text id="LTxt4" class="vlabelData" text="{biddata>Vendors}"></Text>
+            <Text id="LTxt5" class="vlabelData" text="Technical Score: {biddata>Technical Score}"></Text>
+        </Panel>
+    </VBox>
+    <HBox class="vendorListHeading">
+        <FlexBox >
+            <Text class="vTHeading" text="Vendor List for Charter Request-{biddata>Chartering Req. No.}"></Text>
+        </FlexBox>
+        <FlexBox>
+            <Label class="cql1" text="Current Quote"/>
+            <Input value="{biddata>Original Bid}"></Input>
+        </FlexBox>
+        <FlexBox>
+            <Label class="cql1" text="Quote Price:"/>
+            <Input value="{biddata>Original Bid}"></Input>
+            <Button text="Submit"></Button>
+        </FlexBox>
+    </HBox>
+    <Table id="bvTableId" class="bvTable sapUiResponsiveMargin" width="auto" items="{biddata>/bVendorData}">
+
+          <columns>
+           <Column id="bvcolum1">
+             <Text id="bvtext1" text="Vendors"/>
+           </Column>
+           <Column id="bvcolum2" >
+             <Text id="bvtext2" text="Technical Score"/>
+           </Column>
+           <Column id="bvcolum3" >
+             <Text id="bvtext4" text="Commercial Score"/>
+           </Column>
+           <Column id="bvcolum4" >
+             <Text id="bvtext5" text="Original Bid"/>
+           </Column>
+           <Column id="bvcolum5" >
+             <Text id="bvtext6" text="Current Bid"/>
+           </Column>
+          </columns>
+ 
+          <items>
+           <ColumnListItem class="vendorList" id="bvcolumnlist1" press="onPressVendorTable">
+             <cells>
+              <Text id="bvtxt1"  text ="{biddata>Vendors}"/>
+              <Text id="bvtxt2"  text ="{biddata>Technical Score}"/>
+              <Text id="bvtxt3"  text ="{biddata>Commercial Score}"/>
+              <Text id="bvtxt4"  text ="{biddata>Original Bid}"/>
+              <Text id="bvtxt5"  text ="{biddata>Current Bid}"/>
+             </cells>
+           </ColumnListItem>
+          </items>
+        </Table>
+
+
+
+
+
+
+
+
 
  </mvc:View>

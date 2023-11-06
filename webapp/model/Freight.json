@@ -1,0 +1,64 @@
+{
+    "freightData1": [
+        {
+            "Port Name": "Mumbai",
+            "Distance(NM)": "1625.00",
+            "Cargo Size": "0.000",
+            "Freight Cost": "0.000",
+            "Other Cost": "10",
+            "Total Projected Cost per Port": ""
+        },
+        {
+            "Port Name": "Mumbai",
+            "Distance(NM)": "1625.00",
+            "Cargo Size": "0.000",
+            "Freight Cost": "0.000",
+            "Other Cost": "10",
+            "Total Projected Cost per Port": ""
+        },
+        {
+            "Port Name": "",
+            "Distance(NM)": "",
+            "Cargo Size": "",
+            "Freight Cost": "",
+            "Other Cost": "",
+            "Total Projected Cost per Port": ""
+        }
+       
+       
+       
+       
+    ],
+    "freightData2": [
+        {
+            "Port Name": "Mumbai",
+            "Distance(NM)": "1625.00",
+            "Cargo Size": "0.000",
+            "Freight Cost": "0.000",
+            "Other Cost": "10",
+            "Total Projected Cost per Port": ""
+        },
+        {
+            "Port Name": "Mumbai",
+            "Distance(NM)": "1625.00",
+            "Cargo Size": "0.000",
+            "Freight Cost": "0.000",
+            "Other Cost": "10",
+            "Total Projected Cost per Port": ""
+        },
+        {
+            "Port Name": "",
+            "Distance(NM)": "",
+            "Cargo Size": "",
+            "Freight Cost": "",
+            "Other Cost": "",
+            "Total Projected Cost per Port": ""
+        }
+       
+       
+       
+       
+    ]
+    
+}
+
