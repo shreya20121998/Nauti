@@ -1,0 +1,23 @@
+<mvc:View xmlns:tnt="sap.tnt"
+   xmlns:form="sap.ui.layout.form"
+   xmlns:l="sap.ui.layout"
+   controllerName="nauticalfe.controller.dash"
+   xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+    
+   <tnt:ToolHeader id="dashHeaderId"><Text id="dashHeading" text="Nautical DashBoard" class="dashHeading1"></Text></tnt:ToolHeader>
+
+   <VBox id="_IDGenVBox1" class="vPanel">
+      <Panel id="_IDGenPanel1" class="panel" width="650px" height="650px">
+         
+         <Text class="selectionClass" text="Select Transaction Type"></Text>
+         <!-- <ObjectListItem id="_IDGenObjectListItem1" class="selectionClass" intro="Select Transaction Type" ></ObjectListItem> -->
+         <Button id="transId" text="Transaction Data" press="TransData" class="Trans" width="35%" icon="sap-icon://request"></Button>
+         <Button id="mastrId" text="Master Data" press="MastData" class="Mastr" width="35%" icon="sap-icon://visits"></Button>
+      </Panel>   
+
+      <Panel id="_IDGenPanel2"  class="dashPanel2">
+         <Image id="_IDGenImage1"  class="nauticalImg" src="../images/nautical.png" width="400px" height="600px"></Image>
+      </Panel>
+   </VBox>
+
+</mvc:View> 

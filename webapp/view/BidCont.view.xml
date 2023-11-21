@@ -11,25 +11,25 @@ xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
     vertical="true"
     focusable="true">
     <FlexBox id="biddingTileFlexId" class="biddingTileFlex">
-        <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Open" subheader="Bids" press="onTilePress">
+        <GenericTile id="openTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Open" subheader="Bids"  press="openTile">
             <TileContent id="openTile">
-                <NumericContent id="openTileNumericId" value="0" icon="sap-icon://open-folder" withMargin="false" />
+                <NumericContent id="openTileNumericId" value="0" icon="sap-icon://open-folder" withMargin="false"  />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="closedTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Closed" subheader="Bids" press="onTilePress">
+        <GenericTile id="closedTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Closed" subheader="Bids" press="closeTile">
             <TileContent id="closedTile">
                 <NumericContent id="closedTileNumericId" value="4" icon="sap-icon://folder-full" withMargin="false" />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Ongoing" subheader="Bids" press="onTilePress">
+        <GenericTile id="ongoingTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="Ongoing" subheader="Bids" press="ongoingTile">
             <TileContent id="ongoingTile">
                 <NumericContent id="ongoingTileNumericId"  value="2" icon="sap-icon://away" withMargin="false" />
             </TileContent>
         </GenericTile>
 
-        <GenericTile id="AllTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="All" subheader="Bids" press="onTilePress">
+        <GenericTile id="AllTileId" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout tileBox" header="All" subheader="Bids" press="allTile">
             <TileContent id="AllTile">
                 <NumericContent id="AllTileNumericId" value="18" icon="sap-icon://browse-folder" withMargin="false" />
             </TileContent>

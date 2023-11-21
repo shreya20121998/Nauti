@@ -221,7 +221,7 @@
     font-weight:bold;
 }
 /* BiddingObjectPage */
-#container-nauticalfe---BidObj--bidObjContHeaderId2{
+/* #container-nauticalfe---BidObj--bidObjContHeaderId2{
     Background-color: White !important;
 }
 #container-nauticalfe---BidObj--bidObjContHeaderText2{
@@ -267,8 +267,7 @@
 }
 .vlabelData{
     display: block;
-    padding: 15px;
-    
+    padding: 15px;  
 }
 .vendorListHeading{
     justify-content: space-around;
@@ -284,4 +283,113 @@
 }
 .cql1{
     padding-top:8px;
+} */
+
+
+/* for bid obj page*/
+
+.bpanel1{
+    width: 20rem ;
+}
+
+.vPanel{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.text1{
+    display: block;
+}
+.botxt2{
+    margin-top: 15%;
+}
+.botxt3{
+    margin-top: 5%!important;
+    
+}
+.botxt1{
+   margin-top: 3%;
+   font-size: 22px;
+}
+.botxt7{
+    font-size:15px;
+}
+.vendorListHeading{
+    justify-content: space-around;
+    padding-top: 5rem;
+}
+.vTHeading{
+    font-size: 20px;
+}
+.cql1{
+    padding-top:8px;
+}
+#application-nauticalfe-display-component---BidObj--table-tblHeadNav{
+    background-color: rgb(240, 235, 235);
+    border-top: 1px solid rgb(187, 186, 186);
+
+}
+#application-nauticalfe-display-component---BidObj--boTxt6{
+    color: green;
+    margin-top: 15%;
+    font-size: 24px;
+}
+/*dashboard*/
+.dashHeading1{
+    color: white !important;
+}
+.vPanel{
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    /* gap: 5 rem; */
+}
+/* .panel{
+    padding: 40px;
+} */
+.selectionClass{
+    border-top: 1px solid #d6cece !important;
+    border-bottom: 1px solid #d6cece !important;
+    margin-top: 3rem;
+    font-size: 18px;
+    padding: 10px;
+}
+.Trans{
+    margin-top: 20%;
+    margin-left: -13%;
+}
+.Mastr{
+    margin-top: 10%;
+    margin-left: 20%;
+}
+.nauticalImg{
+    max-width: 280px !important;
+    height: 270px !important;
+}
+
+.dashPanel2{
+    padding: 1rem;  
+}
+.sapUiSizeCompact .sapMBtnInner {
+    border-radius: 4px;
+}
+.mastrimg{
+    margin-top: 10px;
+}
+/* .Trans{
+    padding: 10%; margin: 10% 15%;
+}
+.Mastr{
+    padding: 10%; margin: 10% 15%;
+} */
+
+/*transaction data css*/
+.voy,.right,.FS {
+    margin: 5%;
+}
+/*master data css*/
+.one,.two,.three,.four,.five{
+    margin: 2%; margin-top: 7%;
 }

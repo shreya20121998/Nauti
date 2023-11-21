@@ -14,7 +14,7 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "Ongoing"
         },
         {
             "Chartering Req. No.": "4000000049",
@@ -30,7 +30,7 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "Ongoing"
         },
         {
             "Chartering Req. No.": "4000000049",
@@ -46,7 +46,23 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "Ongoing"
+        },
+        {
+            "Chartering Req. No.": "4000000049",
+            "Bid Start Date": "2023-11-01",
+            "Bid Start Time": "15:06:45",
+            "Bid End Date": "2023-11-01",
+            "Bid End Time": "15:20:51",
+            "Status": "Open"
+        },
+        {
+            "Chartering Req. No.": "4000000049",
+            "Bid Start Date": "2023-11-01",
+            "Bid Start Time": "15:06:45",
+            "Bid End Date": "2023-11-01",
+            "Bid End Time": "15:20:51",
+            "Status": "Open"
         },
         {
             "Chartering Req. No.": "4000000049",
@@ -62,23 +78,7 @@
             "Bid Start Time": "15:06:45",
             "Bid End Date": "2023-11-01",
             "Bid End Time": "15:20:51",
-            "Status": "Closed"
-        },
-        {
-            "Chartering Req. No.": "4000000049",
-            "Bid Start Date": "2023-11-01",
-            "Bid Start Time": "15:06:45",
-            "Bid End Date": "2023-11-01",
-            "Bid End Time": "15:20:51",
-            "Status": "Closed"
-        },
-        {
-            "Chartering Req. No.": "4000000049",
-            "Bid Start Date": "2023-11-01",
-            "Bid Start Time": "15:06:45",
-            "Bid End Date": "2023-11-01",
-            "Bid End Time": "15:20:51",
-            "Status": "Closed"
+            "Status": "Ongoing"
         },
         {
             "Chartering Req. No.": "4000000049",
@@ -133,15 +133,15 @@
         {
             "Vendors": "The Shipping Corporation Of India Limited",
             "Technical Score": "T1",
-            "Commercial Score": "L2",
-            "Original Bid": "INR 600,000.00",
+            "Commercial score": "L2",
+            "Orignal Bid": "INR 600,000.00",
             "Current Bid": "INR 610,000.00"
         },
         {
             "Vendors": "VR Maritime Services Private Limite",
             "Technical Score": "T2",
-            "Commercial Score": "L1",
-            "Original Bid": "INR 650,000.00",
+            "Commercial score": "L1",
+            "Orignal Bid": "INR 650,000.00",
             "Current Bid": "INR 605,000.00"
         }
     ]

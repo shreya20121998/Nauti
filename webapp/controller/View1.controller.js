@@ -20,6 +20,10 @@ sap.ui.define([
             onPress2: function() {
                 const oRouter = this.getOwnerComponent().getRouter();
                 oRouter.navTo("RouteBidCont");
+            },
+            onPress3: function(){
+                const oRouter = this.getOwnerComponent().getRouter();
+                oRouter.navTo("Routedash")
             }
         });
     });

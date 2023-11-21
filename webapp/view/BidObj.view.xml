@@ -1,80 +1,87 @@
-<mvc:View xmlns:tnt="sap.tnt" 
-xmlns:form="sap.ui.layout.form" xmlns:l="sap.ui.layout"
- controllerName="nauticalfe.controller.BidObj" 
-	xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+
+<mvc:View xmlns:tnt="sap.tnt" xmlns:cards="sap.f.cards"
+xmlns:form="sap.ui.layout.form"
+xmlns:f="sap.f"
+ controllerName="nauticalfe.controller.BidObj"
+    xmlns="sap.m" xmlns:mvc="sap.ui.core.mvc" displayBlock="true">
+   <tnt:ToolHeader id="header2"><Text id="Bidheading" text="Bidding Controller Portal " class="heading1"></Text></tnt:ToolHeader>
+   
+   <VBox id="vPanel1" class = "vPanel">
+ 
+   <Panel id="bPanel1" class="bpanel1 sapUiResponsiveMargin">
+ 
+    <Label id="Label1" text="Bid Information for Charter Req"/>
+    <Text id="boTxt1" class="text1 botxt1" text="{biddata>Chartering Req. No.}"></Text>
+   
+    <Text id="boTxt2" class="botxt2" text="Bid From: {biddata>Bid Start Date} {biddata>Bid Start Time}"/>
+    <Text id="boTxt3" class="botxt3 text1 " text="Bid To: {biddata>Bid End Date} {biddata>Bid End Time}"/>
+   
+   </Panel>
+   
+   <Panel id="bPanel2" class="bpanel2 sapUiResponsiveMargin"  >
+ 
+    <Label id="Label01" text="" />
     
-    <!-- <ObjectHeader title="{biddata>Chartering Req. No.}"></ObjectHeader> -->
-<tnt:ToolHeader id="bidObjContHeaderId" class="bidObjContHeader"><Link id="biddingContHeaderText" text="Bidding Controller Portal"></Link></tnt:ToolHeader>
-<tnt:ToolHeader id="bidObjContHeaderId2" class="bidObjContHeader2"><Text id="bidObjContHeaderText2" text="Bidding Controller Portal"></Text></tnt:ToolHeader>
-
-    <VBox id="vPanel1" class="vPanel">
-        <Panel id="bPanel1" class="BPanel1 sapUiResponsiveMargin">
-            <Label id="LTxt1" text="Bid Information for Charter Req. "></Label>
-            <Text id="boTxt1" class="botxt1" text="{biddata>Chartering Req. No.}"/>
-            <Text id="boTxt2" class="botxt2" text="Bid From: {biddata>Bid Start Date} {biddata>Bid Start Time}"/>
-            <Text id="boTxt3" class="botxt3" text="Bid To: {biddata>Bid End Date} {biddata>Bid End Time}"/>
-        </Panel>
-
-        <Panel id="bPanel2" class="BPanel2" >
-            <Text id="LTxt2" class="vlabel" text="Leading Commercial Rank: {biddata>Commercial Score} "></Text>
-            <Text id="LTxt3" class="vlabelData" text="Quote: {biddata>Current Bid}"></Text>
-            <Text id="LTxt4" class="vlabelData" text="{biddata>Vendors}"></Text>
-            <Text id="LTxt5" class="vlabelData" text="Technical Score: {biddata>Technical Score}"></Text>
-        </Panel>
-    </VBox>
-    <HBox class="vendorListHeading">
-        <FlexBox >
-            <Text class="vTHeading" text="Vendor List for Charter Request-{biddata>Chartering Req. No.}"></Text>
+    <Text id="boTxt5" class="botxt5 text1 " text=""/>
+    <Text id="boTxt4" class="text1" text=""></Text>
+    <Text id="boTxt6" class="text1  " text=""/>
+    <Text id="boTxt7" class="text1 " text=""/>
+   
+   </Panel>
+ 
+   </VBox>
+   
+<HBox id="HBox1" class="vendorListHeading">
+        <FlexBox id="FlexBox1" >
+            <Label id="Label3" text="Vendor List for Charter Request-"/>
+            <Text id="boTxt01" class="botxt3" text="{biddata>Chartering Req. No.}"></Text>
         </FlexBox>
-        <FlexBox>
-            <Label class="cql1" text="Current Quote"/>
-            <Input value="{biddata>Original Bid}"></Input>
+        <FlexBox id="FlexBox2">
+            <Label id="Label10" class="cql1" text="Current Quote"/>
+            <Input id="QuoteValue" value=""></Input>
         </FlexBox>
-        <FlexBox>
-            <Label class="cql1" text="Quote Price:"/>
-            <Input value="{biddata>Original Bid}"></Input>
-            <Button text="Submit"></Button>
+        <FlexBox id="FlexBox3">
+            <Label id="Label2" class="cql1" text="Quote Price:"/>
+            <Input id="Input1" value="{biddata>Original Bid}"></Input>
+            <Button id="Button" text="Submit"></Button>
         </FlexBox>
     </HBox>
-    <Table id="bvTableId" class="bvTable sapUiResponsiveMargin" width="auto" items="{biddata>/bVendorData}">
-
-          <columns>
-           <Column id="bvcolum1">
-             <Text id="bvtext1" text="Vendors"/>
-           </Column>
-           <Column id="bvcolum2" >
-             <Text id="bvtext2" text="Technical Score"/>
-           </Column>
-           <Column id="bvcolum3" >
-             <Text id="bvtext4" text="Commercial Score"/>
-           </Column>
-           <Column id="bvcolum4" >
-             <Text id="bvtext5" text="Original Bid"/>
-           </Column>
-           <Column id="bvcolum5" >
-             <Text id="bvtext6" text="Current Bid"/>
-           </Column>
-          </columns>
+   
+   
+   
  
-          <items>
-           <ColumnListItem class="vendorList" id="bvcolumnlist1" press="onPressVendorTable">
+   <Table id="table" items="{biddata>/bVendorData}" growing="true" growingThreshold="10" selectionChange="BidObjData" itemPress="itemPressHandler">
+          <columns>
+           <Column id="bVheading1" >
+             <Text id="text1" text="Vendors"/>
+           </Column>
+           <Column id="bVheading2" >
+             <Text id="text2" text="Technical Score"/>
+           </Column>
+           <Column id="bVheading3" >
+             <Text id="text3" text="Commercial score"/>
+           </Column>
+           <Column id="bVheading4" >
+             <Text id="text4" text="Orignal Bid"/>
+           </Column>
+           <Column id="bVheading5" >
+             <Text id="text5" text="Current Bid"/>
+           </Column>
+           
+          </columns>
+      <items >
+           <ColumnListItem id="coloumnlist"  type="Navigation" press="Testing">
              <cells>
-              <Text id="bvtxt1"  text ="{biddata>Vendors}"/>
-              <Text id="bvtxt2"  text ="{biddata>Technical Score}"/>
-              <Text id="bvtxt3"  text ="{biddata>Commercial Score}"/>
-              <Text id="bvtxt4"  text ="{biddata>Original Bid}"/>
-              <Text id="bvtxt5"  text ="{biddata>Current Bid}"/>
-             </cells>
-           </ColumnListItem>
-          </items>
+              <Text id="bfield1" text = "{biddata>Vendors}"/>
+              <Text id="bfield2" text = "{biddata>Technical Score}"/>
+              <Text id="bfield3" text ="{biddata>Commercial score}"/>
+              <Text id="bfield4" text ="{biddata>Orignal Bid}"/>
+              <Text id="bfield5" text ="{biddata>Current Bid}"/>
+               
+         </cells>
+         </ColumnListItem>
+        </items>
         </Table>
-
-
-
-
-
-
-
-
-
- </mvc:View>
+   
+    </mvc:View>
+ 

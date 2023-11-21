@@ -119,6 +119,27 @@
           "target": [
             "TargetBidObj"
           ]
+        },
+        {
+          "name": "Routedash",
+          "pattern": "dashboard",
+          "target": [
+            "Targetdash"
+          ]
+        },
+        {
+          "name": "TransView",
+          "pattern": "TransViewObj",
+          "target": [
+            "TargetTransView"
+          ]
+        },
+        {
+          "name": "MastView",
+          "pattern": "MastViewObj",
+          "target": [
+            "TargetMastView"
+          ]
         }
       ],
       "targets": {
@@ -156,6 +177,27 @@
           "clearControlAggregation": false,
           "viewId": "BidObj",
           "viewName": "BidObj"
+        },
+        "Targetdash": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "dash",
+          "viewName": "dash"
+        },
+        "TargetTransView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "TransView",
+          "viewName": "TransView"
+        },
+        "TargetMastView": {
+          "viewType": "XML",
+          "transition": "slide",
+          "clearControlAggregation": false,
+          "viewId": "MastView",
+          "viewName": "MastView"
         }
       }
     },
